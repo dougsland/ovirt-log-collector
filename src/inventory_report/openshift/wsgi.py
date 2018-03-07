@@ -63,7 +63,7 @@ def execute_cmd(command):
 
 
 def version():
-    cmd = [ANALYZER_BIN, "--help"]
+    cmd = [ANALYZER_BIN, "--version"]
     print("[%s]" % cmd)
     return execute_cmd(cmd)
 
