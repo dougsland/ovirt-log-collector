@@ -63,9 +63,7 @@ def execute_cmd(command):
 
 
 def version():
-    return subprocess.Popen(
-                [ANALYZER_BIN, '--version'],
-                stdout=subprocess.PIPE).communicate()[0]
+    execute_cmd([ANALYZER_BIN, '--version'])
 
 @app.route("/", methods=['GET', 'POST'])
 def index():
