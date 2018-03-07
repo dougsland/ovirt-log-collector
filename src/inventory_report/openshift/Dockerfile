@@ -27,7 +27,7 @@ RUN yum install -y git \
 	automake \
 	python-flask \
 	python2-devel \
-	python-gunicorn \ 
+	python-gunicorn
 
 RUN git clone http://gerrit.ovirt.org/p/ovirt-log-collector && \
 	cd ovirt-log-collector && \
