@@ -20,14 +20,14 @@ FROM centos/python-35-centos7
 USER root
 
 RUN yum install -y http://resources.ovirt.org/pub/yum-repo/ovirt-release-master.rpm
-RUN yum install -y git && \
-	rpm-build && \
-	autoconf && \
-	gettext-devel && \
-	automake && \
-	python-flask && \
-	python2-devel && \
-	python-gunicorn && \ 
+RUN yum install -y git \
+	rpm-build \
+	autoconf \
+	gettext-devel \
+	automake \
+	python-flask \
+	python2-devel \
+	python-gunicorn \ 
 
 RUN git clone http://gerrit.ovirt.org/p/ovirt-log-collector && \
 	cd ovirt-log-collector && \
