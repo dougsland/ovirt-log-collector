@@ -63,7 +63,9 @@ def execute_cmd(command):
 
 
 def version():
-    execute_cmd([ANALYZER_BIN, '--version'])
+    cmd = [ANALYZER_BIN, '--version']
+    print(cmd)
+    execute_cmd(cmd)
 
 @app.route("/", methods=['GET', 'POST'])
 def index():
